@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="SS1.css">
+        <title>YOU ENTERED INTO THE JAVASCRIPT PART</title>
+    </head>
+<body>
+    <a href="613 assignment.html">HOME...</a><br>
+    <a href="HTML.html">for html click here</a><br>
+
+    <a href="CSS.html">for css click here</a><br>
+
+    <div>
+    
+       <h2> What is JavaScript</h2>
+JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.
+
+Although, JavaScript has no connectivity with Java programming language. The name was suggested and provided in the times when Java was gaining popularity in the market. In addition to web browsers, databases such as CouchDB and MongoDB uses JavaScript as their scripting and query language.
+<br>
+<h2>Features of JavaScript</h2>
+There are following features of JavaScript:<br>
+
+All popular web browsers support JavaScript as they provide built-in execution environments.
+JavaScript follows the syntax and structure of the C programming language. Thus, it is a structured programming language.
+JavaScript is a weakly typed language, where certain types are implicitly cast (depending on the operation).
+JavaScript is an object-oriented programming language that uses prototypes rather than using classes for inheritance.
+It is a light-weighted and interpreted language.
+It is a case-sensitive language.
+JavaScript is supportable in several operating systems including, Windows, macOS, etc.
+It provides good control to the users over the web browsers.<br>
+<h3>History of JavaScript</h3>
+In 1993, Mosaic, the first popular web browser, came into existence. In the year 1994, Netscape was founded by Marc Andreessen. He realized that the web needed to become more dynamic. Thus, a 'glue language' was believed to be provided to HTML to make web designing easy for designers and part-time programmers. Consequently, in 1995, the company recruited Brendan Eich intending to implement and embed Scheme programming language to the browser. But, before Brendan could start, the company merged with Sun Microsystems for adding Java into its Navigator so that it could compete with Microsoft over the web technologies and platforms. Now, two languages were there: Java and the scripting language. Further, Netscape decided to give a similar name to the scripting language as Java's. It led to 'Javascript'. Finally, in May 1995, Marc Andreessen coined the first code of Javascript named 'Mocha'. Later, the marketing team replaced the name with 'LiveScript'. But, due to trademark reasons and certain other reasons, in December 1995, the language was finally renamed to 'JavaScript'. From then, JavaScript came into existence.
+<br>
+<h3>Application of JavaScript</h3>
+JavaScript is used to create interactive websites. It is mainly used for:<br>
+
+Client-side validation,
+Dynamic drop-down menus,
+Displaying date and time,
+Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+Displaying clocks etc.
+JavaScript Example
+<script>  
+document.write("Hello JavaScript by JavaScript");  
+</script> <br>
+<h3>JavaScript Example</h3>
+Javascript example is easy to code. JavaScript provides 3 places to put the JavaScript code: within body tag, within head tag and external JavaScript file.
+
+Let’s create the first JavaScript example.
+
+<script type="text/javascript">  
+document.write("JavaScript is a simple language for javatpoint learners");  
+</script>  
+The script tag specifies that we are using JavaScript.<br>
+
+The text/javascript is the content type that provides information to the browser about the data.<br>
+
+The document.write() function is used to display dynamic content through JavaScript. We will learn about document object in detail later.<br>
+
+3 Places to put JavaScript code<br>
+Between the body tag of html<br>
+Between the head tag of html<br>
+In .js file (external javaScript)<br>
+1) JavaScript Example : code between the body tag<br>
+In the above example, we have displayed the dynamic content using JavaScript. Let’s see the simple example of JavaScript that displays alert dialog box.
+<br>
+<script type="text/javascript">  
+ alert("Hello user...");  
+</script>
+<br>
+
+<h4>JavaScript Example : code between the head tag</h4>
+Let’s see the same example of displaying alert dialog box of JavaScript that is contained inside the head tag.<br>
+
+In this example, we are creating a function msg(). To create function in JavaScript, you need to write function with function_name as given below.
+
+To call function, you need to work on event. Here we are using onclick event to call msg() function.
+<br>
+<html>  
+<head>  
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello user...");  
+}  
+</script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>  
+<br>
+
+<h3>External JavaScript file</h3>
+We can create external JavaScript file and embed it in many html page.<br>
+
+It provides code re usability because single JavaScript file can be used in several html pages.<br>
+
+An external JavaScript file must be saved by .js extension. It is recommended to embed all JavaScript files into a single file. It increases the speed of the webpage.
+
+Let's create an external JavaScript file that prints Hello Javatpoint in a alert dialog box.<br>
+
+message.js<br>
+<pre>
+function msg(){  
+ alert("Hello Javatpoint");  
+}  
+</pre>
+
+<h4>Advantages of External JavaScript</h4>
+There will be following benefits if a user creates an external javascript:<br>
+
+It helps in the reusability of code in more than one HTML file.<br>
+It allows easy code readability.<br>
+It is time-efficient as web browsers cache the external js files, which further reduces the page loading time.<br>
+It enables both web designers and coders to work with html and js files parallelly and separately, i.e., without facing any code conflictions.
+The length of the code reduces as only we need to specify the location of the js file.<br>
+<h5>Disadvantages of External JavaScript</h5>
+There are the following disadvantages of external files:<br>
+
+The stealer may download the coder's code using the url of the js file.<br>
+If two js files are dependent on one another, then a failure in one file may affect the execution of the other dependent file.<br>
+The web browser needs to make an additional http request to get the js code.<br>
+A tiny to a large change in the js code may cause unexpected results in all its dependent files.<br>
+We need to check each file that depends on the commonly created external javascript file.<br>
+If it is a few lines of code, then better to implement the internal javascript code.<br>
+
+    </div>
+    <div>
+       <h2> Document Object Model</h2>
+The document object represents the whole html document.<br>
+
+When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to our web page.
+
+As mentioned earlier, it is the object of window. So<br>
+
+window.document  <br>
+Is same as<br>
+
+document  <br>
+
+<p>
+    <h4>Properties of document object</h4>
+    Let's see the properties of document object that can be accessed and modified by the document object. javascript document object
+    
+    <h4>Methods of document object</h4>
+    We can access and change the contents of document by its methods.
+    
+    <h4>The important methods of document object are as follows:</h4><br>
+    
+    Method	Description<br>
+    write("string")	writes the given string on the doucment.<br>
+    writeln("string")	writes the given string on the doucment with newline character at the end.<br>
+    getElementById()	returns the element having the given id value.<br>
+    getElementsByName()	returns all the elements having the given name value.<br>
+    getElementsByTagName()	returns all the elements having the given tag name.<br>
+    getElementsByClassName()	returns all the elements having the given class name.<br>
+    <h4>Accessing field value by document object</h4>
+    In this example, we are going to get the value of input text by user. Here, we are using document.form1.name.value to get the value of name field.
+    
+    Here, document is the root element that represents the html document.<br>
+    
+    form1 is the name of the form.<br>
+    
+    name is the attribute name of the input text.<br>
+    
+    value is the property, that returns the value of the input text.<br>
+    
+    </p>
+    <p>
+       <h3> Javascript - document.getElementById() method</h3>
+The document.getElementById() method returns the element of specified id.<br>
+ we can use document.getElementById() method to get value of the input text.<br>
+  But we need to define id for the input field.<br>
+  Let's see the simple example of document.getElementById() method that prints cube of the given number.
+
+<script type="text/javascript">  
+function getcube(){  
+var number=document.getElementById("number").value;  
+alert(number*number*number);  
+}  
+</script>  
+<form>  
+Enter No:<input type="text" id="number" name="number"/><br/>  
+<input type="button" value="cube" onclick="getcube()"/>  
+</form>
+    </p>
+
+    <p>
+       <h3> Javascript - document.getElementsByName() method</h3>
+
+The document.getElementsByName() method returns all the element of specified name.<br>
+
+The syntax of the getElementsByName() method is given below:
+<br>
+<pre>
+document.getElementsByName("name")  
+Here, name is required.
+
+Example of document.getElementsByName() method
+In this example, we going to count total number of genders. Here, we are using getElementsByName() method to get all the genders.
+</pre>
+<script type="text/javascript">  
+function totalelements()  
+{  
+var allgenders=document.getElementsByName("gender");  
+alert("Total Genders:"+allgenders.length);  
+}  
+</script>  
+<form>  
+Male:<input type="radio" name="gender" value="male">  
+Female:<input type="radio" name="gender" value="female">  
+  
+<input type="button" onclick="totalelements()" value="Total Genders">  
+</form>  
+</p>
+<p>
+   <h3> Javascript - document.getElementsByTagName() method</h3>
+The document.getElementsByTagName() method returns all the element of specified tag name.<br>
+
+The syntax of the getElementsByTagName() method is given below:<br>
+<pre>document.getElementsByTagName("name")  
+Here, name is required.
+
+Example of document.getElementsByTagName() method
+In this example, we going to count total number of paragraphs used in the document. To do this, we have called the document.getElementsByTagName("p") method that returns the total paragraphs.
+</pre>
+
+<script type="text/javascript">  
+function countpara(){  
+var totalpara=document.getElementsByTagName("p");  
+alert("total p tags are: "+totalpara.length);  
+  
+}  
+</script>  
+<p>This is a pragraph</p>  
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+<p>Let's see the simple example</p>  
+<button onclick="countpara()">count paragraph</button>  
+
+</p>
+<p>
+   <h4>Another example of document.getElementsByTagName() method</h4> 
+In this example, we going to count total number of h2 and h3 tags used in the document.<br>
+
+<script type="text/javascript">  
+function counth2(){  
+var totalh2=document.getElementsByTagName("h2");  
+alert("total h2 tags are: "+totalh2.length);  
+}  
+function counth3(){  
+var totalh3=document.getElementsByTagName("h3");  
+alert("total h3 tags are: "+totalh3.length);  
+}  
+</script>  
+<h2>This is h2 tag</h2>  
+<h2>This is h2 tag</h2>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<button onclick="counth2()">count h2</button>  
+<button onclick="counth3()">count h3</button>  
+
+</p>
+
+<p>
+    <h3>Javascript - innerHTML</h3>
+The innerHTML property can be used to write the dynamic html on the html document.<br>
+
+It is used mostly in the web pages to generate the dynamic html such as registration form, comment form, links etc.<br>
+</p>
+<p>
+   <h3> Javascript - innerText</h3>
+The innerText property can be used to write the dynamic text on the html document. Here, text will not be interpreted as html text but a normal text.
+<br>
+It is used mostly in the web pages to generate the dynamic content such as writing the validation message, password strength etc.
+<br>
+<h5>Javascript innerText Example</h5>
+In this example, we are going to display the password strength when releases the key after press.
+<br>
+<script type="text/javascript" >  
+function validate() {  
+var msg;  
+if(document.myForm.userPass.value.length>5){  
+msg="good";  
+}  
+else{  
+msg="poor";  
+}  
+document.getElementById('mylocation').innerText=msg;  
+ }  
+  
+</script>  
+<form name="myForm">  
+<input type="password" value="" name="userPass" onkeyup="validate()">  
+Strength:<span id="mylocation">no strength</span>  
+</form>  
+</p>
+
+<strong>SO this is all about my understanding on java script that i learned in class and from other tutorials also....
+    there are more stuffs that are availible on internet...if you want to learn more about javascript i am providing you 
+    link below you can learn through that...just click on the link given bellow...
+</strong>
+<br>
+<a href="https://www.javatpoint.com/javascript-tutorial">click here for learning more about javascript</a>
+
+</div>
+</body>
+</html>

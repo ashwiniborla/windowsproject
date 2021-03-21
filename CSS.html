@@ -1,0 +1,352 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="SS.css";
+        <title>YOU ENTER INTO THE CSS PART</title>
+       
+    </head>
+    <body>
+        <p><a href="613 assignment.html">HOME...</a></p>
+            <p><a href="HTML.html">click here for HTML</a></p>
+            <p><a href="js.html">for javascript click here...</a></p>
+        
+
+CSS is the language we use to style an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+<div>
+    <ol>
+   <li>Css Describes how <u>HTML</u> elements are to be displayed on screen, paper or in other media.</li>
+   <li>CSS <u> SAVES </u> alot of works, it can control the layout of multiple web pages</li>
+   <li>CSS makes the problem much flexible and make efficient and browser friendly,
+       onse you start developing sites using css you will likely never use table based website layout again.
+   </li>
+   </ol>
+    
+  <h3> CSS RULES</h3><p>css rules contains 3 parts :- selectors{property: value}</p>
+  example:- 
+  <style type="text/css">
+    body{
+        background:pink;
+        font-family: Arial;
+    }
+</style>
+<p>each selector can have multiple properties. selectors can also be combined</p><br>
+<p>there are three types of <u>css style</u> internal, inline and external styles </p>
+<p>internal style sheet simply means that the style sheet is contained in the same <u>HTML</u> document in which the style are used here,
+we've defined a style sheet in b/w our head tags with 3 rules that will format the body the header one tags and the paragraph element </p>
+ 
+</div>
+<div>
+    <h5>CSS Selector</h5>
+CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+
+There are several different types of selectors in CSS.
+<ol type="1">
+    <li> CSS Element Selector</li><br>
+<li>CSS Id Selector</li><br>
+<li>CSS Class Selector</li><br>
+<li>CSS Universal Selector</li><br>
+<li>CSS Group Selector</li><br>
+
+</ol>
+<h5>CSS Element Selector</h5>
+The element selector selects the HTML element by name.
+<h5>CSS Id Selector</h5>
+The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.
+
+It is written with the hash character (#), followed by the id of the element.
+<h5>CSS Class Selector</h5>
+The class selector selects HTML elements with a specific class attribute. It is used with a period character . (full stop symbol) followed by the class name.
+
+Note: A class name should not be started with a number.
+<h5>CSS Class Selector for specific element</h5>
+If you want to specify that only one specific HTML element should be affected then you should use the element name with class selector.
+
+<h5>CSS Universal Selector</h5>
+The universal selector is used as a wildcard character. It selects all the elements on the pages.
+
+<h5>CSS Group Selector</h5>
+The grouping selector is used to select all the elements with the same style definitions.
+
+Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.
+
+Let's see the CSS code without group selector.
+<ol>
+h1 {  
+    text-align: center;  
+    color: blue;  
+}  <br>
+h2 {  
+    text-align: center;  
+    color: blue;  
+} <br> 
+p {  
+    text-align: center;  
+    color: blue;  
+}  <br>
+As you can see, you need to define CSS properties for all the elements. It can be grouped in following ways:<br>
+
+h1,h2,p {  
+    text-align: center;  
+    color: blue;  
+}  <br>
+</ol>
+</div>
+<div>
+    <h4>How to add CSS</h4>
+CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.
+<ol>
+    
+    <li>Inline CSS
+    </li>
+    <li>Internal CSS
+    </li>
+    <li>External CSS</li>
+</ol>
+1)Inline CSS:-
+Inline CSS is used to apply CSS on a single line or element.
+ 
+For more visit here: Inline CSS
+<br>
+
+2) Internal CSS:-
+Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.
+<br>
+
+3) External CSS:-
+External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css.
+
+For example:
+
+p{color:blue}  
+You need to link this style.css file to your html pages like this
+The link tag must be used inside head section of html.
+
+<h4>Inline CSS</h4>
+We can apply CSS in a single element by inline CSS technique.
+
+The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some advantages of style sheets so it is advised to use this method sparingly.
+
+If you want to use inline CSS, you should use the style attribute to the relevant tag.
+
+Syntax:
+
+<htmltag style="cssproperty1:value; cssproperty2:value;"> </htmltag>    
+Example:
+
+<h2 style="color:red;margin-left:40px;">Inline CSS is applied on this heading.</h2>  
+<p>This paragraph is not affected.</p>  
+
+Disadvantages of Inline CSS
+You cannot use quotations within inline CSS. If you use quotations the browser will interpret this as an end of your style value.
+These styles cannot be reused anywhere else.
+These styles are tough to be edited because they are not stored at a single place.
+It is not possible to style pseudo-codes and pseudo-classes with inline CSS.
+Inline CSS does not provide browser cache advantages.<br>
+
+
+<h4>Internal CSS</h4>
+The internal style sheet is used to add a unique style for a single document. It is defined in <head> section of the HTML page inside the <style> tag.
+
+Example:
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>  
+body {  
+    background-color: linen;  
+}  
+h1 {  
+    color: red;  
+    margin-left: 80px;  
+}   
+</style>  
+</head>  
+<body>  
+<h1>The internal style sheet is applied on this heading.</h1>  
+<p>This paragraph will not be affected.</p>  
+</body>  
+</html>  
+<br>
+
+<h4>External Css</h4>
+
+The external style sheet is generally used when you want to make changes on multiple pages. It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.
+
+It uses the <link> tag on every pages and the <link> tag should be put inside the head section.<br>
+
+Example:
+
+<head>  
+<link rel="stylesheet" type="text/css" href="mystyle.css">  
+</head>  <br>
+The external style sheet may be written in any text editor but must be saved with a .css extension. This file should not contain HTML elements.
+
+Let's take an example of a style sheet file named "mystyle.css".<br>
+
+File: mystyle.css
+<br>
+
+body {  
+    background-color: lightblue;  
+}  
+h1 {  
+    color: navy;  
+    margin-left: 20px;  
+}  <br> 
+Note: You should not use a space between the property value and the unit. For example: It should be margin-left:20px not margin-left:20 px.
+<br>
+
+<h4>CSS Comments</h4>
+CSS comments are generally written to explain your code. It is very helpful for the users who reads your code so that they can easily understand the code.
+
+Comments are ignored by browsers.
+
+Comments are single or multiple lines statement and written within /*............*/ .<br>
+
+</div>
+<br>
+
+<h3>CSS Background</h3>
+CSS background property is used to define the background effects on element. There are 5 CSS background properties that affects the HTML elements:
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+<h5>1) CSS background-color</h5>
+The background-color property is used to specify the background color of the element.<br>
+<h5>2) CSS background-image</h5>
+The background-image property is used to set an image as a background of an element. By default the image covers the entire element. You can set the background image for a page like this.
+     <br>
+    <h5> 3) CSS background-repeat</h5>
+By default, the background-image property repeats the background image horizontally and vertically. Some images are repeated only horizontally or vertically.
+
+The background looks better if the image repeated horizontally only.<br>
+
+background-repeat: repeat-x;<br>
+<h5>4) CSS background-attachment</h5>
+The background-attachment property is used to specify if the background image is fixed or scroll with the rest of the page in browser window. If you set fixed the background image then the image will not move during scrolling in the browser. Let?s take an example with fixed background image.
+<br>
+<h5>5) CSS background-position</h5>
+The background-position property is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage.
+
+You can set the following positions:<br>
+<ol>
+center
+top
+bottom
+left
+right
+</ol> <br>
+
+<div>
+   <h3> CSS Border</h3>
+The CSS border is a shorthand property used to set the border on an element.<br>
+
+The CSS border properties are use to specify the style, color and size of the border of an element. The CSS border properties are given below
+<br>
+border-style
+border-color
+border-width
+border-radius<br>
+1) CSS border-style<br>
+The Border style property is used to specify the border type which you want to display on the web page.
+
+There are some border style values which are used with border-style property to define a border.<br>
+<pre>
+Value	Description
+none	It doesn't define any border.
+dotted	It is used to define a dotted border.
+dashed	It is used to define a dashed border.
+solid	It is used to define a solid border.
+double	It defines two borders wIth the same border-width value.
+groove	It defines a 3d grooved border. effect is generated according to border-color value.
+ridge	It defines a 3d ridged border. effect is generated according to border-color value.
+inset	It defines a 3d inset border. effect is generated according to border-color value.
+outset	It defines a 3d outset border. effect is generated according to border-color value.
+
+
+</pre>
+
+2) CSS border-width<br>
+The border-width property is used to set the border's width. It is set in pixels. You can also use the one of the three pre-defined values, thin, medium or thick to set the width of the border.
+
+<br>
+3) CSS border-color<br>
+There are three methods to set the color of the border.<br>
+
+Name: It specifies the color name. For example: "red".<br>
+RGB: It specifies the RGB value of the color. For example: "rgb(255,0,0)".<br>
+Hex: It specifies the hex value of the color. For example: "#ff0000".<br>
+There is also a border color named "transparent". If the border color is not set it is inherited from the color property of the element.
+ 
+
+<br>
+<h3>CSS Display</h3>
+CSS display is the most important property of CSS which is used to control the layout of the element. It specifies how the element is displayed.
+
+Every element has a default display value according to its nature. Every element on the webpage is a rectangular box and the CSS property defines the behavior of that rectangular box.
+<br>
+CSS Display default properties<br>
+default value	inline
+inherited	no
+animation supporting	no
+version	css1
+javascript syntax	object.style.display="none"
+Syntax
+display:value;  
+CSS display values
+There are following CSS display values which are commonly used.<br>
+<pre>
+display: inline;
+display: inline-block;
+display: block;
+display: run-in;
+display: none;
+</pre>
+1) CSS display inline<br>
+The inline element takes the required width only. It doesn't force the line break so the flow of text doesn't break in inline example.
+<br>
+
+<h3>CSS hover</h3>
+The :hover selector is for selecting the elements when we move the mouse on them. It is not only limited to the links. We can use it on almost every HTML element. To style the link to unvisited pages, we can use the :link selector. To style the link for visited pages, we can use the :visited selector and to style the active links we can use the :active selector.
+<br>
+It is introduced in CSS1. The hover can be used to highlight the web pages as per the preference of users in an effective web-designing program.
+<br>
+The hover feature includes the following effects:<br>
+<pre>
+Change the color of the background and font.
+Modify the opacity of the image.
+Text embedding.
+Create image rollover effects.
+Swapping of images.
+</pre>
+Basically, the hover effect modifies the element's property value to enable the animate changes on a stated image/text or the corresponding elements. Embedding of the hover elements in the web pages makes them interactive and functional.
+<br>
+Generally, the hover feature is compatible with all of the main browsers. But, it will be a challenging task to implement it on touch devices. It is observed that an active hover function gets stuck on the non-supportive device.
+<br>
+<pre>
+Syntax
+:hover {  
+  css declarations;  
+}  </pre>
+Let's understand it by using some illustrations.<br>
+
+Example 1: Changing the link color on hover by using CSS<br>
+
+Let's see how the color of the link gets changed when we place the cursor on it. It will create a stylish effect, and its implementation is easy when we are using CSS.
+<br>
+
+<p>SO THIS IS ALL ABOUT MY UNDERSTANDING OF CSS A LITTLE BIT THERE ARE SO MUCH STUFF AVAILIBLE ON CSS I AM PROVIDING YOU LINK 
+    HERE JUST CLICK ON THAT THEN YOU WILL ENTER ONTO THAT PAGE...
+    <br>
+    <a href="https://www.javatpoint.com/css-tutorial">click here for learning more about CSS</a>
+</p>
+</div>
+</body>
+
+</html>
